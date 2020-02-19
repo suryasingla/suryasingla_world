@@ -1,5 +1,5 @@
 class Article < ApplicationRecord
-  has_one :category
+  belongs_to :category
 
   # Validations
   validates_presence_of :title, :content
